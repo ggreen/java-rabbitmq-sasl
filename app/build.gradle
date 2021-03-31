@@ -28,11 +28,13 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
 
     implementation 'com.rabbitmq:amqp-client:5.11.0'
+
+    implementation group: 'com.github.nyla-solutions', name: 'nyla.solutions.core', version: '1.4.3'
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'java.rabbitmq.showCase.App'
+    mainClass = 'rabbitmq.sasl.SaslApp'
 }
 
 tasks.named('test') {
